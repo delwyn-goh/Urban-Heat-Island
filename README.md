@@ -21,7 +21,9 @@ Given that Singapore has rapidly urbanized since independence in 1965, we are mo
 ## Data Extraction and Cleaning
 
 ![image](https://github.com/user-attachments/assets/758a83f5-3a28-4dce-9d8b-6b0e145a5cc7)
+
 Meteorological data was collected from the [Meteorological Service Singapore](https://www.weather.gov.sg/climate-historical-daily/), which maintains a network of 62 weather stations throughout Singapore since 1980. Data collected at each station contains information such as the daily temperature (maximum, minimum, mean), rainfall (total, 30min-max, 60min-max, 120min-max), and wind speed (maximum, mean).
 
 However, out of the 62 stations, not all of them have collected all the meteorological data, with some stations only collecting rainfall data. Most of the weather stations were only set up in 2009, thus there is only data from 2009 onwards or only collecting temperature data. With this in mind, we have selected 20 stations that contain the most data to use for the analysis.
+
 ![image](https://github.com/user-attachments/assets/fd713b5a-d1db-4ee9-bf6f-34f83989e1ba)
