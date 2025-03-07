@@ -27,3 +27,18 @@ Meteorological data was collected from the [Meteorological Service Singapore](ht
 However, out of the 62 stations, not all of them have collected all the meteorological data, with some stations only collecting rainfall data. Most of the weather stations were only set up in 2009, thus there is only data from 2009 onwards or only collecting temperature data. With this in mind, we have selected 20 stations that contain the most data to use for the analysis.
 
 ![image](https://github.com/user-attachments/assets/fd713b5a-d1db-4ee9-bf6f-34f83989e1ba)
+
+As the data collected from MSS does not have humidity data, the humidity data is pulled from NEA's API, found on [data.gov] (https://api.data.gov.sg/v1/environment/relative-humidity). This API provides humidity readings from the 20 stations at every minute from 2016 to 2025. As we are not analysing data at that level of granularity for this project, we will be resampling the data to obtain the mean humidity for each day. 
+
+Other data such as percentage of [forested area] (https://tablebuilder.singstat.gov.sg/table/TS/M891231), [electrical consumption] (https://tablebuilder.singstat.gov.sg/table/TS/M890841 ), [number of vehicles] (https://tablebuilder.singstat.gov.sg/table/TS/M650271), [number of residential units] (https://tablebuilder.singstat.gov.sg/table/TS/M400751), [total population] (https://tablebuilder.singstat.gov.sg/table/TS/M810001), and [town population](https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data) were all pulled from Singapore Department of Statistics. 
+
+## Feature Engineering
+
+As we do not have a direct data on UHI intensity, the Pulau Ubin station is designated as the rural station, and temperatures from the other 19 weather stations will be compared against the tempearture readings from the Pulau Ubin Station. The difference between the two temperatures will be taken as the UHI intensity. 
+
+Another factor that might affect UHI that is of interest will be the building density of an area. As there is no readily available data regarding building density, we extract the data from [URA Master Plan] (https://www.ura.gov.sg/maps/index.html). The URA Master Plan shows the Gross Plot Ratio (GPR) of each building. GPR is the ratio of the gross floor area to total land area. Higher GPR indicates that the building is taller, and thus we use this data as a proxy for building density.
+
+## Exploratory Data Analysis
+
+
+
