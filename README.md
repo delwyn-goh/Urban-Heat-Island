@@ -43,4 +43,7 @@ Another factor that might affect UHI that is of interest will be the building de
 
 As the CBD is located within the Central Region, one would expect that the UHI intensity within the Central Region would be the highest. However, the average UHI intensity in the East region was actually higher than that in the Central Region, especially past 2016.
 
+## Key Recomendations
+Of the varialbes that can be controlled to a certain extent by humans and the government, what are some recommendations that we can follow intead that we can avoid the usalbility of the various AI tools that the Villains have developed>
+
 
