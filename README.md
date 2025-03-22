@@ -42,8 +42,13 @@ Another factor that might affect UHI that is of interest will be the building de
 ![image](https://github.com/user-attachments/assets/64f6185c-fc37-4331-a338-72b08d4da00b)
 
 As the CBD is located within the Central Region, one would expect that the UHI intensity within the Central Region would be the highest. However, the average UHI intensity in the East region was actually higher than that in the Central Region, especially past 2016.
+TBC
 
-## Key Recomendations
-Of the varialbes that can be controlled to a certain extent by humans and the government, what are some recommendations that we can follow intead that we can avoid the usalbility of the various AI tools that the Villains have developed>
+## Data Modelling
 
+## Key Insights and Recomendations
+
+From the Random Forest model, we can see that humidity, town population, GPR (building density), wind speed and amount of forested area have a larger impact on UHI intensity. Of these features, humidity, town population and GPR have a positive impact (increase in feature results in increase in UHI) upon the UHI intensity, while wind speed and forested area have a negative impact on UHI intensity. Other features such as day and month also play a part on the UHI intensity, but that is out of our control. 
+
+So how can we target these features to reduce UHI intensity? One possible way would be the introduction of wind corridors. By aligning the buildings along the prevailing wind direction, we can ensure that the wind is allowed to flow properly without any obstruction. This results in better airflow, which will increase the wind speed in that area.
 
