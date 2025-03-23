@@ -46,9 +46,53 @@ TBC
 
 ## Data Modelling
 
+For this project, we are using three different type of Decision Tree models: Random Forest, XGBoost and LightGBM.
+
+
+<img src="https://github.com/user-attachments/assets/d374c19b-e1d9-46e2-9982-2fdd84be72a8" width="640">
+
+
+<ins>Decision Tree (Source: viso.ai)</ins>
+
+In laymen terms, Decision Tree models follow a flowchart, with a question being asked at each step that is split into branches.
+
+
+<img src = "https://github.com/user-attachments/assets/861e0aec-796b-4b09-b1cd-c5df1a91772a" width = "640">
+
+<ins>Random Forest (Source: Spotfire)</ins>
+
+Random Forest models build an ensemble of decision trees (hence the forest name), and they each decision tree is trained on a random subset of features and data. By averaging the output of all the trees, we are able to get  better performance when compared to decision tree models.
+
+<img src = "https://github.com/user-attachments/assets/c27e8f43-762a-4d85-8994-28f1f7e8f992" width = "640">
+
+<ins>XGBoost (Source: Medium)</ins>
+
+XGBoost is a type of decision tree boosting model, where decision trees are built sequentially, and each new tree that is built corrects the error made by the previous trees. XGBoost performs level-wise tree growth, and we can end up with a large amount of leaves depending on the tree depth.
+
+<img src = "https://github.com/user-attachments/assets/4cf35352-c5e0-4c07-8ea5-4bfc098c20f0" width = "640">
+
+<ins> LightGBM (Source: Medium) </ins>
+
+LightGBM is another form of of decision tree bossting similar to XGBoost, and tends to perform better and more efficiently for large datasets. The key difference from XGBoost is that LightGBM performs leaf-wise growth, where it expands upon the leaf with the highest performance improvement from the previous iteration.
+
+### <ins>Modelling Results</ins>
+![image](https://github.com/user-attachments/assets/c7d7c7ae-802e-4cf3-8c21-8c2977fbd442)
+
+Out of all the models, the Random Forest model performed the best, with the highest R<sup>2</sup> values, lowest RMSE values and a fast runtime at approximately 12s. Comparatively, the XGBoost and LightGBM models have much lower R<sup>2</sup> values and higher RMSE values.
+
+### <ins> Feature Importance </ins>
+![image](https://github.com/user-attachments/assets/ad3f57b6-0421-45f8-baec-3569e6628e35)
+
+
 ## Key Insights and Recomendations
 
 From the Random Forest model, we can see that humidity, town population, GPR (building density), wind speed and amount of forested area have a larger impact on UHI intensity. Of these features, humidity, town population and GPR have a positive impact (increase in feature results in increase in UHI) upon the UHI intensity, while wind speed and forested area have a negative impact on UHI intensity. Other features such as day and month also play a part on the UHI intensity, but that is out of our control. 
 
 So how can we target these features to reduce UHI intensity? One possible way would be the introduction of wind corridors. By aligning the buildings along the prevailing wind direction, we can ensure that the wind is allowed to flow properly without any obstruction. This results in better airflow, which will increase the wind speed in that area.
 
+We should also try to increase the amount of forested area in Singapore, as tree canopies help to provide shade that reduces surface temperatures and limits the evaporation. Plants in general also tend to absorb less heat when compared to concrete man-made structures.
+
+However, given the limited land area available in Singapore, it may not be feasible for us to pursue increased forested area with the population and economic growth of Singapore. The next best alternative would be to introduce urban greenery. Some forms of urban greenery are roof gardens, green roofs and vertical gardens.
+
+<img src="https://www.woha.net/prod/wp-content/uploads/2020/03/OASIA-DOWNTOWN-PBH-108.jpg">
+<ins> Oasia Hotel Downtown (Source: WOHA) </ins>
