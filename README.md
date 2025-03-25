@@ -43,7 +43,7 @@ Another factor that might affect UHI that is of interest will be the building de
 
 As the CBD is located within the Central Region, one would expect that the UHI intensity within the Central Region would be the highest. However, the average UHI intensity in the East region was actually higher than that in the Central Region, especially past 2016.
 
-The data were combined together into one csv file for the data modelling. As there were missing values for some dates in the meteorological data, they were imputed using KNN Imputer from the Scikit-learn package.
+The data were combined together into [uhi_data_final.csv](https://github.com/delwyn-goh/Urban-Heat-Island/blob/main/uhi_data_final.csv) file for the data modelling. As there were missing values for some dates in the meteorological data, they were imputed using KNN Imputer from the Scikit-learn package.
 
 
 ## Data Modelling
