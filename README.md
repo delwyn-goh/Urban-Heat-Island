@@ -1,14 +1,13 @@
 # Urban Heat Island
  Capstone Project for General Assembly DAB03
 ## Content:
-- Background
-- Problem Statement
-- Data Extraction and Cleaning
-- Feature Engineering
-- Exploratory Data Analysis
-- Data Modelling
-- Key Insights and Recommendations
-- References
+- [Background](https://github.com/delwyn-goh/Urban-Heat-Island/edit/main/README.md#background)
+- [Problem Statement](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#problem-statement)
+- [Data Extraction and Cleaning](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#data-extraction-and-cleaning)
+- [Feature Engineering](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#feature-engineering)
+- [Exploratory Data Analysis](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#exploratory-data-analysis)
+- [Data Modelling](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#exploratory-data-modelling)
+- [Key Insights and Recommendations](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#key-insights-and-recomendations)
 
 ## Background
 The Urban Heat Island (UHI) effect is a phenomenon where built-up areas in highly urbanized regions tend to exhibit higher temperatures than the rural areas. This could be due to various factors such as reduced vegetation, high building density, and high population. The increased prevalence of UHI contributes to elevated energy consumption to escape the urban heat and adverse health effects such as higher risk of heat injury. UHI poses a challenge to sustainable urban development, and is an important aspect of global warming that should be studied.
@@ -32,6 +31,7 @@ As the data collected from MSS does not have humidity data, the humidity data is
 
 Other data such as percentage of [forested area](https://tablebuilder.singstat.gov.sg/table/TS/M891231), [electrical consumption](https://tablebuilder.singstat.gov.sg/table/TS/M890841 ), [number of vehicles](https://tablebuilder.singstat.gov.sg/table/TS/M650271), [number of residential units](https://tablebuilder.singstat.gov.sg/table/TS/M400751), [total population](https://tablebuilder.singstat.gov.sg/table/TS/M810001), and [town population](https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data) were all pulled from Singapore Department of Statistics. 
 
+
 ## Feature Engineering
 
 As we do not have a direct data on UHI intensity, the Pulau Ubin station is designated as the rural station, and temperatures from the other 19 weather stations will be compared against the tempearture readings from the Pulau Ubin Station. The difference between the two temperatures will be taken as the UHI intensity. 
@@ -42,7 +42,9 @@ Another factor that might affect UHI that is of interest will be the building de
 ![image](https://github.com/user-attachments/assets/64f6185c-fc37-4331-a338-72b08d4da00b)
 
 As the CBD is located within the Central Region, one would expect that the UHI intensity within the Central Region would be the highest. However, the average UHI intensity in the East region was actually higher than that in the Central Region, especially past 2016.
-TBC
+
+The data were combined together into one csv file for the data modelling. As there were missing values for some dates in the meteorological data, they were imputed using KNN Imputer from the Scikit-learn package.
+
 
 ## Data Modelling
 
@@ -93,6 +95,3 @@ So how can we target these features to reduce UHI intensity? One possible way wo
 We should also try to increase the amount of forested area in Singapore, as tree canopies help to provide shade that reduces surface temperatures and limits the evaporation. Plants in general also tend to absorb less heat when compared to concrete man-made structures.
 
 However, given the limited land area available in Singapore, it may not be feasible for us to pursue increased forested area with the population and economic growth of Singapore. The next best alternative would be to introduce urban greenery. Some forms of urban greenery are roof gardens, green roofs and vertical gardens.
-
-<img src="https://www.woha.net/prod/wp-content/uploads/2020/03/OASIA-DOWNTOWN-PBH-108.jpg">
-<ins> Oasia Hotel Downtown (Source: WOHA) </ins>
