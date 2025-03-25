@@ -1,4 +1,4 @@
-# Urban Heat Island
+# ![image](https://camo.githubusercontent.com/4c08aef508e29819d38e09c6c18631b6a600d4cdc80c59a34b207d5c6013862d/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67) Urban Heat Island
  Capstone Project for General Assembly DAB03
 ## Content:
 - [Background](https://github.com/delwyn-goh/Urban-Heat-Island?tab=readme-ov-file#background)
