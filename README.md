@@ -1,7 +1,7 @@
 # Urban Heat Island
  Capstone Project for General Assembly DAB03
 ## Content:
-- [Background](https://github.com/delwyn-goh/Urban-Heat-Island/edit/main/README.md#background)
+- [Background](https://github.com/delwyn-goh/Urban-Heat-Island?tab=readme-ov-file#background)
 - [Problem Statement](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#problem-statement)
 - [Data Extraction and Cleaning](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#data-extraction-and-cleaning)
 - [Feature Engineering](https://github.com/delwyn-goh/Urban-Heat-Island/tree/main?tab=readme-ov-file#feature-engineering)
